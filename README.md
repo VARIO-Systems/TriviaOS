@@ -16,6 +16,7 @@
 [Short overview (TRIVIAOS.md)](TRIVIAOS.md) &bull;
 [Source tree layout](#source-tree-layout) &bull;
 [Building](#building) &bull;
+[Test hardware](#test-hardware) &bull;
 [Contributing](CONTRIBUTING.md) &bull;
 [Coding style](CODING_STYLE.md) &bull;
 [Installation notes](INSTALL) &bull;
@@ -117,6 +118,22 @@ To install, burn the boot CD image (or write it to a USB drive), boot from it, a
 The test suites live in [modules/rostests](modules/rostests) and include the Win32/NT API tests, kernel-mode tests (`kmtests`), driver tests and the Wine test suite. `ninja bootcdregtest` produces an image that boots straight into the automated test run.
 
 If you discover a bug, please search the existing issue trackers first — the bug may already be reported upstream at [JIRA](https://jira.reactos.org/issues/).
+
+## Test hardware
+
+The official TriviaOS test laptop is the **Toshiba Satellite A200-1O6**. Builds and driver
+changes are validated on this machine (bare metal) in addition to virtual machines, so hardware
+regressions are caught against a fixed, known reference system.
+
+| Component | Specification |
+| --- | --- |
+| CPU | Intel Core 2 Duo T7100, 2 × 1.8 GHz (Merom) |
+| GPU | ATI Mobility Radeon HD 2400, 128 MB VRAM |
+| RAM | 2048 MB DDR2-667 (2 × 1024 MB, max. 4096 MB) |
+| Storage | 160 GB HDD, DVD writer |
+| Display | 15.4" WXGA TruBrite, 1280 × 800 |
+| I/O | 4× USB 2.0, VGA, S-Video, IEEE 1394 (FireWire), ExpressCard, Ethernet, modem, card reader, audio ports |
+| Form factor | 15.4" consumer notebook, keyboard + touchpad |
 
 ## Contributing
 

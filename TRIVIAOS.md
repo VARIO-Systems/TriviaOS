@@ -42,6 +42,14 @@ ninja livecd                  # -> liveimg.iso (RAM-disk live system)
 
 Concrete build steps, layout of the tree and installation notes: [README.md](README.md).
 
+## Reference test machine
+
+TriviaOS is validated on one fixed reference laptop in addition to virtual machines:
+
+**Toshiba Satellite A200-1O6** — Intel Core 2 Duo T7100 (2 × 1.8 GHz), ATI Mobility Radeon HD 2400
+(128 MB), 2 GB DDR2-667, 160 GB HDD, 15.4" WXGA (1280 × 800). Full specification:
+[README.md](README.md#test-hardware).
+
 ## Status
 
 Alpha. TriviaOS inherits an operating system that is under heavy development — expect broken
