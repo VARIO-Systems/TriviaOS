@@ -1,0 +1,58 @@
+;*****************************************
+; intel4965.INF
+;
+; Intel Wireless WiFi Link Adapters
+; Adapted for TriviaOS
+;*****************************************
+
+[version]
+Signature   = "$Windows NT$"
+Class       = net
+ClassGuid   = {4d36e972-e325-11ce-bfc1-08002be10318}
+Provider    = "TriviaOS"
+DriverVer   = 12/08/2006,1.0.0
+
+[Manufacturer]
+%TriviaOS% = Device
+
+[Device]
+%NIC_MPCIEX_4965AGN% = Install_MPCIEX_GEN_4965_AGN, PCI\VEN_8086&DEV_4229
+%NIC_MPCIEX_4965AGN% = Install_MPCIEX_Lenovo_4965_AGN, PCI\VEN_8086&DEV_4230
+
+[Install_MPCIEX_GEN_4965_AGN]
+Characteristics = 0x84 ; NCF_HAS_UI, NCF_PHYSICAL
+BusType         = 5 ; PCI bus
+CopyFiles       = CopyFiles_Driver
+*IfType = 71 ; IF_TYPE_IEEE80211
+*MediaType = 16 ; NdisMediumNative802_11
+*PhysicalMediaType = 9 ; NdisPhysicalMediumNative802_11
+
+[Install_MPCIEX_Gen_4965_AGN.Services]
+AddService = NETw4v32, 0x00000002, NIC_Service
+
+[Install_MPCIEX_Lenovo_4965_AGN]
+Characteristics = 0x84 ; NCF_HAS_UI, NCF_PHYSICAL
+BusType         = 5 ; PCI bus
+CopyFiles       = CopyFiles_Driver
+*IfType = 71 ; IF_TYPE_IEEE80211
+*MediaType = 16 ; NdisMediumNative802_11
+*PhysicalMediaType = 9 ; NdisPhysicalMediumNative802_11
+
+[Install_MPCIEX_Lenovo_4965_AGN.Services]
+AddService = NETw4v32, 0x00000002, NIC_Service
+
+[CopyFiles_Driver]
+NETw4v32.sys
+
+[NIC_Service]
+DisplayName    = %NIC_Service_DispName%
+ServiceType    = 1 ; SERVICE_KERNEL_DRIVER
+StartType      = 3 ; SERVICE_DEMAND_START
+ErrorControl   = 1 ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %12%\NETw4v32.sys
+LoadOrderGroup = NDIS
+
+[Strings]
+TriviaOS = "TriviaOS Project"
+NIC_MPCIEX_4965AGN = "Intel(R) Wireless WiFi Link 4965AGN"
+NIC_Service_DispName = "Intel(R) Wireless WiFi Link 4965AGN Adapter Driver"

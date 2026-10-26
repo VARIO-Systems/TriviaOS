@@ -154,7 +154,7 @@ BEGIN
     LTEXT COPYRIGHT_YEAR, IDC_STATIC, 88, 75, 17, 10
     LTEXT " रिऐक्ट ओएस टीम\0", IDC_STATIC, 105, 75, 53, 10
     LTEXT "", IDC_ABOUT_OTHERSTUFF, 35, 90, 180, 20, SS_NOPREFIX
-    LTEXT "यह रिऐक्ट ओएस वर्ज़न पंजीकृत है:", IDC_ABOUT_REG_TO, 35, 115, 180, 10
+    LTEXT "यह TriviaOS वर्ज़न पंजीकृत है:", IDC_ABOUT_REG_TO, 35, 115, 180, 10
     LTEXT "", IDC_ABOUT_REG_USERNAME, 45, 125, 180, 10, SS_NOPREFIX
     LTEXT "", IDC_ABOUT_REG_ORGNAME, 45, 135, 180, 10, SS_NOPREFIX
     LTEXT "", IDC_STATIC, 35, 147, 235, 1, SS_ETCHEDHORZ
@@ -168,7 +168,7 @@ IDD_ABOUT_AUTHORS DIALOGEX 35, 90, 235, 85
 STYLE DS_SHELLFONT | WS_CHILD
 FONT 8, "MS Shell Dlg"
 BEGIN
-    LTEXT "इन लोगों द्वारा रिऐक्ट ओएस बनाया गया था:", IDC_STATIC, 0, 0, 180, 10
+    LTEXT "इन लोगों द्वारा TriviaOS बनाया गया था:", IDC_STATIC, 0, 0, 180, 10
     LISTBOX IDC_ABOUT_AUTHORS_LISTBOX, 0, 10, 165, 75
 END
 
@@ -178,7 +178,7 @@ CAPTION "रन"
 FONT 8, "MS Shell Dlg"
 BEGIN
     ICON "", IDC_RUNDLG_ICON, 7, 11, 18, 20, WS_VISIBLE
-    LTEXT "किसी भी प्रोग्राम, फ़ोल्डर, दस्तावेज़ या इंटरनेट संसाधन का नाम टाइप करें, और रिऐक्ट ओएस इसे आपके लिए खोल देगा।", 12289, 36, 11, 185, 18
+    LTEXT "किसी भी प्रोग्राम, फ़ोल्डर, दस्तावेज़ या इंटरनेट संसाधन का नाम टाइप करें, और TriviaOS इसे आपके लिए खोल देगा।", 12289, 36, 11, 185, 18
     LTEXT "&खोलो:", 12305, 7, 39, 24, 10
     CONTROL "", IDC_RUNDLG_EDITPATH, "COMBOBOX", WS_TABSTOP | WS_GROUP | WS_VSCROLL | WS_VISIBLE | CBS_AUTOHSCROLL | CBS_DROPDOWN, 36, 37, 184, 100
     DEFPUSHBUTTON "ओके", IDOK, 36, 70, 59, 14
@@ -427,7 +427,7 @@ BEGIN
     GROUPBOX "कार्य", -1, 7, 10, 249, 40
     CONTROL "", IDC_FOLDER_OPTIONS_TASKICON, "Static", SS_ICON | WS_CHILD | WS_VISIBLE, 14, 20, 21, 20
     AUTORADIOBUTTON "&फ़ोल्डर में सामान्य कार्यों को दिखाएं", IDC_FOLDER_OPTIONS_COMMONTASKS, 40, 20, 210, 10, WS_TABSTOP | WS_GROUP
-    AUTORADIOBUTTON "रिऐक्ट ओएस &क्लासिक फ़ोल्डरों का उपयोग करें", IDC_FOLDER_OPTIONS_CLASSICFOLDERS, 40, 32, 210, 10
+    AUTORADIOBUTTON "TriviaOS &क्लासिक फ़ोल्डरों का उपयोग करें", IDC_FOLDER_OPTIONS_CLASSICFOLDERS, 40, 32, 210, 10
     GROUPBOX "फ़ोल्डर ब्राउज़ करें", -1, 7, 60, 249, 40, WS_TABSTOP
     CONTROL "", IDC_FOLDER_OPTIONS_FOLDERICON, "Static", SS_ICON | WS_CHILD | WS_VISIBLE, 14, 70, 21, 20
     AUTORADIOBUTTON "&एक ही विंडो में प्रत्येक फ़ोल्डर खोलें", IDC_FOLDER_OPTIONS_SAMEWINDOW, 40, 70, 210, 10, WS_TABSTOP | WS_GROUP
@@ -497,7 +497,7 @@ END
 
 IDD_LOG_OFF DIALOGEX 0, 0, 188, 60
 STYLE DS_SHELLFONT | DS_MODALFRAME | DS_CENTER | WS_POPUPWINDOW | WS_CAPTION
-CAPTION "लॉग ऑफ़ रिऐक्ट ओएस"
+CAPTION "लॉग ऑफ़ TriviaOS"
 FONT 8, "MS Shell Dlg"
 BEGIN
     ICON IDI_SHELL_LOGOFF, IDC_STATIC, 8, 6, 21, 20
@@ -515,14 +515,14 @@ BEGIN
     PUSHBUTTON "&Switch User", IDC_SWITCH_USER_BUTTON, 55, 46, 22, 20, BS_OWNERDRAW | WS_DISABLED | WS_GROUP
     PUSHBUTTON "&लॉग आफ़", IDC_LOG_OFF_BUTTON, 132, 46, 22, 20, BS_OWNERDRAW
     PUSHBUTTON "रद्द करें", IDCANCEL, 162, 103, 40, 12, WS_GROUP | BS_FLAT
-    LTEXT "लॉग ऑफ़ रिऐक्ट ओएस", IDC_LOG_OFF_TEXT_STATIC, 4, 7, 130, 19
+    LTEXT "लॉग ऑफ़ TriviaOS", IDC_LOG_OFF_TEXT_STATIC, 4, 7, 130, 19
     CTEXT "Switch User", IDC_SWITCH_USER_STATIC, 41, 70, 51, 11
     CTEXT "लॉग आफ़", IDC_LOG_OFF_STATIC, 118, 70, 51, 11
 END
 
 IDD_DISCONNECT DIALOGEX 0, 0, 188, 60
 STYLE DS_SHELLFONT | DS_MODALFRAME | DS_CENTER | WS_POPUPWINDOW | WS_CAPTION
-CAPTION "डिस्कनेक्ट रिऐक्ट ओएस"
+CAPTION "डिस्कनेक्ट TriviaOS"
 FONT 8, "MS Shell Dlg"
 BEGIN
     ICON IDI_SHELL_DISCONN, IDC_STATIC, 8, 6, 21, 20
@@ -536,7 +536,7 @@ STYLE DS_SHELLFONT | DS_MODALFRAME | WS_POPUPWINDOW | WS_VISIBLE | WS_CLIPSIBLIN
 CAPTION "ऑटो प्ले"
 FONT 8, "MS Shell Dlg"
 BEGIN
-    LTEXT "एक सामग्री प्रकार का &चयन करें, फिर उस डिवाइस में इस प्रकार का उपयोग करने पर रिऐक्ट ओएस के लिए स्वचालित रूप से कार्य करने के लिए एक क्रिया चुनें:", 1000, 7, 7, 215, 20
+    LTEXT "एक सामग्री प्रकार का &चयन करें, फिर उस डिवाइस में इस प्रकार का उपयोग करने पर TriviaOS के लिए स्वचालित रूप से कार्य करने के लिए एक क्रिया चुनें:", 1000, 7, 7, 215, 20
     CONTROL "", 1001, "COMBOBOXEX32", WS_TABSTOP | 0x00000043, 7, 27, 212, 200
     GROUPBOX "कार्य", -1, 7, 45, 212, 146
     AUTORADIOBUTTON "&निष्पादन करने के लिए एक कार्य चुनें:", 1005, 14, 54, 202, 10, WS_GROUP
@@ -552,7 +552,7 @@ FONT 8, "MS Shell Dlg"
 BEGIN
     ICON "", 1000, 5, 7, 21, 20
     LTEXT "इस डिस्क या डिवाइस में एक से अधिक प्रकार की सामग्री है।", 1001, 32, 7, 191, 20
-    LTEXT "आप रिऐक्ट ओएस से क्या करवाना चाहते हैं?", 1002, 32, 31, 188, 8
+    LTEXT "आप TriviaOS से क्या करवाना चाहते हैं?", 1002, 32, 31, 188, 8
     CONTROL "", 1003, "SYSLISTVIEW32", WS_BORDER | WS_TABSTOP | 0x0000C04D, 32, 43, 188, 139
     DEFPUSHBUTTON "ठीक", IDOK, 96, 186, 60, 14
     PUSHBUTTON "रद्द करें", IDCANCEL, 160, 186, 60, 14
@@ -564,10 +564,10 @@ CAPTION "मिश्रित सामग्री"
 FONT 8, "MS Shell Dlg"
 BEGIN
     ICON "", 1000, 5, 7, 21, 20
-    LTEXT "जब आप डिस्क डालते हैं या डिवाइस को इस तरह की फ़ाइल से कनेक्ट करते हैं तो रिऐक्ट ओएस एक ही क्रिया कर सकता है:", 1001, 30, 7, 193, 20
+    LTEXT "जब आप डिस्क डालते हैं या डिवाइस को इस तरह की फ़ाइल से कनेक्ट करते हैं तो TriviaOS एक ही क्रिया कर सकता है:", 1001, 30, 7, 193, 20
     ICON "", 1005, 32, 27, 11, 10, SS_REALSIZECONTROL
     EDITTEXT 1006, 49, 28, 177, 14, ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP
-    LTEXT "आप रिऐक्ट ओएस से क्या करवाना चाहते हैं?", 1002, 32, 41, 190, 8
+    LTEXT "आप TriviaOS से क्या करवाना चाहते हैं?", 1002, 32, 41, 190, 8
     CONTROL "", 1003, "SYSLISTVIEW32", WS_BORDER | WS_TABSTOP | 0x0000C04D, 32, 55, 188, 112
     AUTOCHECKBOX "हमेशा चयनित कार्रवाई करें।", 1004, 32, 171, 190, 10
     DEFPUSHBUTTON "ठीक", IDOK, 96, 185, 60, 14
@@ -580,8 +580,8 @@ CAPTION "ऑटो प्ले"
 FONT 8, "MS Shell Dlg"
 BEGIN
     ICON "", 1000, 5, 7, 21, 20
-    LTEXT "हर बार जब आप इस डिवाइस को कनेक्ट करते हैं तो रिऐक्ट ओएस एक ही क्रिया कर सकता है।", 1001, 32, 7, 190, 22
-    LTEXT "आप रिऐक्ट ओएस से &क्या करवाना चाहते हैं?", 1002, 32, 31, 190, 8
+    LTEXT "हर बार जब आप इस डिवाइस को कनेक्ट करते हैं तो TriviaOS एक ही क्रिया कर सकता है।", 1001, 32, 7, 190, 22
+    LTEXT "आप TriviaOS से &क्या करवाना चाहते हैं?", 1002, 32, 31, 190, 8
     CONTROL "", 1003, "SYSLISTVIEW32", WS_BORDER | WS_TABSTOP | 0x0000C04D, 32, 43, 187, 96
     AUTOCHECKBOX "&हमेशा चयनित कार्रवाई करें", 1004, 32, 143, 190, 8
     DEFPUSHBUTTON "ठीक", IDOK, 94, 160, 60, 14
@@ -590,7 +590,7 @@ END
 
 IDD_SHUTDOWN DIALOGEX 0, 0, 211, 103
 STYLE DS_SHELLFONT | DS_MODALFRAME | DS_CENTER | WS_POPUPWINDOW | WS_CAPTION
-CAPTION "शट डाउन रिऐक्ट ओएस"
+CAPTION "शट डाउन TriviaOS"
 FONT 8, "MS Shell Dlg"
 BEGIN
     ICON 8240, -1, 6, 6, 21, 20, SS_REALSIZECONTROL | WS_GROUP
@@ -856,7 +856,7 @@ BEGIN
 
     /* Warning format system drive dialog strings */
     IDS_NO_FORMAT_TITLE "Cannot format this volume"
-    IDS_NO_FORMAT "This volume cannot be formatted! It contains important system files in order for ReactOS to run."
+    IDS_NO_FORMAT "This volume cannot be formatted! It contains important system files in order for TriviaOS to run."
 
     /* Run File dialog */
     IDS_RUNDLG_ERROR "रन फ़ाइल डायलॉग बॉक्स डिस्प्ले करने में असमर्थ (आंतरिक त्रुटि)"
@@ -942,8 +942,8 @@ BEGIN
 
     /* Friendly File Type Names */
     IDS_DIRECTORY "फोल्डर"
-    IDS_BAT_FILE "रिऐक्ट ओएस बैच फ़ाइल"
-    IDS_CMD_FILE "रिऐक्ट ओएस कमांड स्क्रिप्ट"
+    IDS_BAT_FILE "TriviaOS बैच फ़ाइल"
+    IDS_CMD_FILE "TriviaOS कमांड स्क्रिप्ट"
     IDS_COM_FILE "डॉस ऐप्लिकेशन"
     IDS_CPL_FILE "कंट्रोल पैनल आइटम"
     IDS_CUR_FILE "कर्सर"
@@ -988,7 +988,7 @@ BEGIN
     IDS_DEFAULT_CLUSTER_SIZE "डिफ़ॉल्ट ऐलॅकेशॅन साइज"
     IDS_COPY_OF "की कापी"
 
-    IDS_SHLEXEC_NOASSOC "इस प्रकार की फ़ाइल को खोलने के लिए कोई रिऐक्ट ओएस प्रोग्राम कॉन्फ़िगर नहीं किया गया है।"
+    IDS_SHLEXEC_NOASSOC "इस प्रकार की फ़ाइल को खोलने के लिए कोई TriviaOS प्रोग्राम कॉन्फ़िगर नहीं किया गया है।"
 
     IDS_FILE_DETAILS "'%s' एक्सटेंशन के लिए विवरण"
     IDS_FILE_DETAILSADV "एक्सटेंशन '%s' वाली फाइलें '%s' प्रकार की होती हैं। सभी '%s' फ़ाइलों को प्रभावित करने वाली सेटिंग्स बदलने के लिए, उन्नत पर क्लिक करें।"
@@ -1077,7 +1077,7 @@ BEGIN
     IDS_SYSTEMFOLDER "System Folder"
 
     /* For IDD_LOG_OFF_FANCY */
-    IDS_LOG_OFF_DESC "Closes your programs and ends your ReactOS session."
+    IDS_LOG_OFF_DESC "Closes your programs and ends your TriviaOS session."
     IDS_SWITCH_USER_DESC "Lets another user log on while your programs and files remain open.\r\n\r\n(You can also switch users by pressing the Windows logo key + L.)"
     IDS_LOG_OFF_TITLE "लॉग आफ़"
     IDS_SWITCH_USER_TITLE "Switch User"

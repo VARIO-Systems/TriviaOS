@@ -455,7 +455,7 @@ static const WCHAR* s_DefaultSoundEvents[][2] =
     { L"SystemHand", L"%SystemRoot%\\Media\\ReactOS_Critical_Stop.wav" },
     { L"SystemNotification", L"%SystemRoot%\\Media\\ReactOS_Balloon.wav" },
     { L"SystemQuestion", L"%SystemRoot%\\Media\\ReactOS_Ding.wav" },
-    { L"SystemStart", L"%SystemRoot%\\Media\\ReactOS_Startup.wav" },
+    { L"SystemStart", L"%SystemRoot%\\Media\\TriviaOS_Startup.wav" },
     { L"WindowsLogoff", L"%SystemRoot%\\Media\\ReactOS_LogOff.wav" }
 /* Logon sound is already set by default for both Server and Workstation */
 };

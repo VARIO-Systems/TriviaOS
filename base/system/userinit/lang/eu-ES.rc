@@ -1,4 +1,4 @@
-/*
+﻿/*
  * PROJECT:     ReactOS Userinit Logon Application
  * LICENSE:     GPL-2.0-or-later (https://spdx.org/licenses/GPL-2.0-or-later)
  * PURPOSE:     Spanish (Basque) resource file
@@ -30,7 +30,7 @@ CAPTION "ReactOS LiveCD-a"
 FONT 8, "MS Shell Dlg"
 BEGIN
     CONTROL "IDB_LOGO", IDC_STARTLOGO, "Static", WS_CHILD | WS_VISIBLE | SS_OWNERDRAW, 18, 4, 290, 99
-    DEFPUSHBUTTON "Hasi ReactOS &Live CD-a", IDC_RUN, 71, 108, 175, 21
+    DEFPUSHBUTTON "Hasi TriviaOS &Live CD-a", IDC_RUN, 71, 108, 175, 21
     PUSHBUTTON "&Instalatu ReactOS", IDC_INSTALL, 71, 136, 175, 21
 
     // LTEXT "", IDC_STATIC, 7, 152, 300, 8

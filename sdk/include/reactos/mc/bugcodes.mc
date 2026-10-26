@@ -19,7 +19,7 @@ Severity=Informational
 Facility=System
 SymbolicName=WINDOWS_NT_BANNER
 Language=English
-ReactOS Version %s
+TriviaOS Version %s
 Build %s
 Reporting NT %s (Build %u%s)
 .
@@ -71,7 +71,7 @@ SymbolicName=REACTOS_COPYRIGHT_NOTICE
 Language=English
 \n\nReactOS is free software, covered by the GNU General Public License,
  and you\n are welcome to change it and/or distribute copies of it under
- certain\n conditions. There is absolutely no warranty for ReactOS.\n
+ certain\n conditions. There is absolutely no warranty for TriviaOS.\n
 .
 
 MessageId=0x7F

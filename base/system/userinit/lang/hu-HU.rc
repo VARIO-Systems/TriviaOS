@@ -1,4 +1,4 @@
-/*  Hungarian translation by Peter Nagy <nagylakas@gmail.com> */
+﻿/*  Hungarian translation by Peter Nagy <nagylakas@gmail.com> */
 
 LANGUAGE LANG_HUNGARIAN, SUBLANG_DEFAULT
 
@@ -25,7 +25,7 @@ CAPTION "ReactOS LiveCD"
 FONT 8, "MS Shell Dlg"
 BEGIN
     CONTROL "IDB_LOGO", IDC_STARTLOGO, "Static", WS_CHILD | WS_VISIBLE | SS_OWNERDRAW, 18, 4, 290, 99
-    DEFPUSHBUTTON "Run ReactOS &Live CD", IDC_RUN, 71, 108, 175, 21
+    DEFPUSHBUTTON "Run TriviaOS &Live CD", IDC_RUN, 71, 108, 175, 21
     PUSHBUTTON "&Install ReactOS", IDC_INSTALL, 71, 136, 175, 21
 
     // LTEXT "", IDC_STATIC, 7, 152, 300, 8

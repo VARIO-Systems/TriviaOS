@@ -32,7 +32,7 @@ BOOL bIsWindows = FALSE;
 BOOL bIsPreVistaOSVersion = TRUE;
 
 /* Language-independent Vendor strings */
-const LPCWSTR IDS_REACTOS   = L"ReactOS";
+const LPCWSTR IDS_REACTOS   = L"TriviaOS";
 const LPCWSTR IDS_MICROSOFT = L"Microsoft";
 const LPCWSTR IDS_WINDOWS   = L"Windows";
 

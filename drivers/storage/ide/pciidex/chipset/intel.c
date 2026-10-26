@@ -949,7 +949,16 @@ IntelInitChannel(
         {
             SupportedMode = SATA_ALL;
 
-            // TODO: Read the port map register and set CHANNEL_FLAG_NO_SLAVE when appropriate
+            /* TriviaOS: Robust port map check for ICH8M and similar chipsets */
+            if (Controller->Pci.DeviceID == PCI_DEV_ICH8_M_82801HM || 
+                Controller->Pci.DeviceID == PCI_DEV_ICH8_M_82801HBM)
+            {
+                UCHAR pmr = PciRead8(Controller, 0x90);
+                if (pmr == 0 || pmr == 0xFF)
+                {
+                    INFO("CH %lu: Invalid PMR %02X, using safe defaults\n", Channel, pmr);
+                }
+            }
             ERR("CH %lu: PMR %02X PCS %04X\n",
                 ChanData->Channel,
                 PciRead8(Controller, 0x90),

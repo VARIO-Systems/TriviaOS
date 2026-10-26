@@ -128,7 +128,7 @@ regressions are caught against a fixed, known reference system.
 | Component | Specification |
 | --- | --- |
 | CPU | Intel Core 2 Duo T7100, 2 × 1.8 GHz (Merom) |
-| GPU | ATI Mobility Radeon HD 2400, 128 MB VRAM |
+| GPU | ATI Mobility Radeon HD 2400, 128 MB VRAM (Compatible) |
 | RAM | 2048 MB DDR2-667 (2 × 1024 MB, max. 4096 MB) |
 | Storage | 160 GB HDD, DVD writer |
 | Display | 15.4" WXGA TruBrite, 1280 × 800 |

@@ -24,6 +24,7 @@ DefaultDestDir = 12
 [RealtekMfg]
 %Realtek8139.DeviceDesc% = RTL8139_Inst.ndi,PCI\VEN_10EC&DEV_8139
 %Realtek8139.DeviceDesc% = RTL8139_Inst.ndi,PCI\VEN_10EC&DEV_8138
+%Realtek8139.DeviceDesc% = RTL8139_Inst.ndi,PCI\VEN_10EC&DEV_8136
 
 [AcctonMfg]
 %AcctonEN1207D.DeviceDesc% = RTL8139_Inst.ndi,PCI\VEN_1113&DEV_1211

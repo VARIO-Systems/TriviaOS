@@ -119,8 +119,8 @@ VOID OptionMenuCustomBoot(VOID)
         "Boot Sector (Disk/Partition/File)",
         "Linux",
 #endif
-        "ReactOS",
-        "ReactOS Setup"
+        "TriviaOS",
+        "TriviaOS Setup"
     };
     static ULONG MenuActionsMap[RTL_NUMBER_OF(CustomBootMenuList)] = {
 #if defined(_M_IX86) || defined(_M_AMD64)

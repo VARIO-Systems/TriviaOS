@@ -1,7 +1,7 @@
 
 ; Main ReactOS package
 
-.Set DiskLabelTemplate="ReactOS"                ; Label of disk
+.Set DiskLabelTemplate="TriviaOS"                ; Label of disk
 .Set CabinetNameTemplate="reactos.cab"          ; reactos.cab
 .Set InfFileName="reactos.inf"                  ; reactos.inf
 
