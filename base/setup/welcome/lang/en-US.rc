@@ -5,7 +5,8 @@ LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
 /* Default settings */
 STRINGTABLE
 BEGIN
-    IDS_APPTITLE "ReactOS - Welcome"
+    // TriviaOS: Fenstertitel des Setups
+    IDS_APPTITLE "TriviaOS - Welcome"
     IDS_DEFAULT_TOPIC_TITLE "ReactOS"
     IDS_DEFAULT_TOPIC_DESC "Welcome to ReactOS Operating System.\n\nClick a topic on the left."
     IDS_FONTNAME "Tahoma"
